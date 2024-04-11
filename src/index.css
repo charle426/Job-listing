@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background: #effafa;
+  font-family: League Spartan, sans-serif;
+  /* color: #7b8e8ea0 */
+}
