@@ -41,7 +41,6 @@ Users should be able to:
 
 This challenge really helped me recap and relearn alot about props, map() and filter() methods it looks like it works fine but I think there a bug help me fixed it if you find it
 
-To see how you can add code snippets, see below:
 
 ```js
   const filteredArr = listArr.filter((jobs) => {
@@ -58,7 +57,7 @@ To see how you can add code snippets, see below:
 
 ### Continued development
 
-I think i need to learn more about the every a nd filter()  methods in javaScript
+I think i need to learn more about the every and filter()  methods in javaScript
 
 ```js
 const filteredArr = listArr.filter((jobs) => {

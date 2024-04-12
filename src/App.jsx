@@ -7,7 +7,7 @@ export default function App() {
   const [listArr, setlistArr] = useState(data);
   const [jobFilterArr, setJobFilterArr] = useState([]);
   useEffect(() => {
-    const filteredArr = listArr.filter((jobs) => {
+    const filteredArr = data.filter((jobs) => {
       return jobFilterArr.every(filter => {
         if (
           jobs.role.includes(filter) ||
@@ -59,7 +59,7 @@ export default function App() {
           {jobs}
         </div>
         <div
-          className="group-hover:bg-slate-950 flex  justify-center items-center w-[30px] py-1 px-2 bg-[#5ba4a4]"
+          className="group-hover:bg-slate-950 flex  justify-center duration-300 items-center w-[30px] py-1 px-2 bg-[#5ba4a4]"
           onClick={() =>
             setJobFilterArr((prev) => prev.filter((item) => item !== jobs))
           }
@@ -78,7 +78,7 @@ export default function App() {
           <div className="flex items-center justify-between max-w-[1000px] py-2 px-4 w-full bg-[#fefefe] rounded-lg shadow-[#7b8e8e] shadow-lg">
             <div className="flex items-center gap-3 flex-wrap">{filterArr}</div>
             <div
-              className="hover:underline p-2 hover:text-[#5ba4a4] text-[#7b8e8e]"
+              className="hover:underline p-2 cursor-pointer hover:text-[#5ba4a4] text-[#7b8e8e]"
               onClick={() => setJobFilterArr([])}
             >
               clear
